@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'SportApp', #This is the model we made
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
