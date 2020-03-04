@@ -1,11 +1,12 @@
-<html>
-    <head>
-        <title>
-            Home
-        </title>
-    </head>
-    <body>
-        <h1>HomePage</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus earum quas aliquid distinctio debitis, voluptates suscipit necessitatibus nemo perspiciatis. Illo, obcaecati ducimus id recusandae possimus similique corrupti sed deserunt iure.</p>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+<h1>This is our latest news home page</h1>
+<p>
+    This is HomePage and this page is coming from <b>base.html</b> page.
+</p>
+
+
+{% endblock %}
