@@ -1,3 +1,4 @@
+{% load static %}
 <html>
     <head>
         <title>{% block title %} {% endblock %}</title>
@@ -6,6 +7,8 @@
         Like here we are rendering the navbarForAll.html page in our\
         'Home', 'News', 'Contact' pages -->
         {% include 'navbarForAll.html' %}
+        <!-- We are linking our css file here -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
         <!-- We created a block code here -->
