@@ -17,4 +17,7 @@ def News(request):
     return render(request,'news.html',context)
 
 def Contact(request):
-    return render(request,'contact.html')
+    context = {
+        "age": 20
+    }
+    return render(request,'contact.html',context)
