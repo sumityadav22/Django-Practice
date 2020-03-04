@@ -5,5 +5,14 @@
 <h1>This is our latest News page</h1>
 <p>this page is coming from <b>base.html</b>page</p>
 
+<h1>Here are some news avaliable for you</h1>
+<h5>Which is shown using For loop</h5>
+{% for categories in news_list %}
+<ul>
+    <li>
+        {{ categories }}
+    </li>
+</ul>
+{% endfor %}
 
 {% endblock %}

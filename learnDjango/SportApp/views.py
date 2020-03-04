@@ -11,7 +11,10 @@ def Home(request):
     return render(request,'home.html', context)
 
 def News(request):
-    return render(request,'news.html')
+    context = {
+        "news_list": ["Sports", "Political", "Entertainment", "Bollywood", "Hollywood"]
+    }
+    return render(request,'news.html',context)
 
 def Contact(request):
     return render(request,'contact.html')
