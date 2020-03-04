@@ -1,6 +1,11 @@
 <html>
     <head>
         <title>{% block title %} {% endblock %}</title>
+        <!-- include in django -> what is does is ,
+        it hepls to render a page on other pages.
+        Like here we are rendering the navbarForAll.html page in our\
+        'Home', 'News', 'Contact' pages -->
+        {% include 'navbarForAll.html' %}
     </head>
     <body>
         <!-- We created a block code here -->
