@@ -1,7 +1,9 @@
 <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+        <!-- By using this {% url 'name_of_ourURL' %}
+        We easily can link one url to another and easily can redirect pages -->
+        <li><a href = "{% url 'Home' %}" >Home</a></li>
+        <li><a href="{% url 'News' %}">News</a></li>
+        <li><a href= "{% url 'Contact' %}">Contact</a></li>
     </ul>
 </nav>
