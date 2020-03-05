@@ -1,10 +1,14 @@
-<nav>
-    <ul>
-        <!-- By using this 'url'
-        We easily can link one url to another and easily can redirect pages -->
-        <li><a href = "{% url 'Home' %}" >Home</a></li>
-        <li><a href="{% url 'News' %}">News</a></li>
-        <li><a href= "{% url 'Contact' %}">Contact</a></li>
-        <li><a href= "{% url 'Signin' %}">Signin</a></li>
-    </ul>
-</nav>
+{% load static %}
+<link rel="stylesheet" href = "{% static 'css/navbarForAll.css' %}">
+<div class="navBar">
+    <nav>
+        <ul>
+            <!-- By using this 'url'
+            We easily can link one url to another and easily can redirect pages -->
+            <li><a href = "{% url 'Home' %}" >Home</a></li>
+            <li><a href="{% url 'News' %}">News</a></li>
+            <li><a href= "{% url 'Contact' %}">Contact</a></li>
+            <li><a href= "{% url 'Signin' %}">Signin</a></li>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,18 @@
+.navBar {
+    background-color: purple;
+    list-style: none;
+}
+
+
+.navBar li{
+    list-style: none;
+    color: #fff;
+}
+
+.navBar a{
+    color: #fff;
+}
+
+.navBar li:hover{
+    background-color: lightyellow;
+}
