@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
+from .forms import RegistrationForm
 
 # Create your views here.
 
@@ -21,3 +22,9 @@ def Contact(request):
         "age": 20
     }
     return render(request,'contact.html',context)
+
+def Signin(request):
+    context = {
+        "form":RegistrationForm
+    }
+    return render(request,'signin.html',context)
