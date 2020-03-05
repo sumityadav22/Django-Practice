@@ -9,7 +9,31 @@
     <!-- If we want to see the form properly we can also use
     {{form.as_p}}    
     -->
-    {{ form.as_p }}
-    <input type="submit" value="Register" class="btn btn-success">
+
+    <form>
+        <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" />
+        <small id="emailHelp" class="form-text text-muted">We'll never share your identity with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="number" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
     </form>
 {% endblock %}
