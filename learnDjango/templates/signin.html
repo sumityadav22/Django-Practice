@@ -3,7 +3,8 @@
 
 {% block body %}
     <h1>This is Signin Page</h1>
-    <form action="" method="POST">
+    <form action="{% url 'addUser' %}" method="post">
+        {% csrf_token %}
     <!-- {{ form }} -->
     <!-- If we want to see the form properly we can also use
     {{form.as_p}}    
