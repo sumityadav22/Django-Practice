@@ -34,7 +34,7 @@ class RegistrationModal(forms.ModelForm):
             'username',
             'password',
             'email',
-            'phone'
+            'phone',
         ]
 
 
