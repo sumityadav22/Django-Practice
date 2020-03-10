@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.shortcuts import HttpResponse
-from .forms import RegistrationForm
+from .forms import RegistrationForm, RegistrationModal
 from .models import RegistrationData
 from django.contrib import messages
 
@@ -45,3 +45,18 @@ def addUser(request):
         messages.add_message(request, messages.SUCCESS, "You have signed up successfuly")
 
     return redirect('Signin')
+
+def modalFrom(request):
+    context = {
+        'modalform':RegistrationModal
+    }
+    return render(request,'modalForm.html', context)
+
+
+def addModalForm(request):
+    mymodalform = RegistrationModal(request.POST)
+
+    if mymodalform.is_valid():
+        mymodalform.save()
+        
+    return redirect('modalForm')

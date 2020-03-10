@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} modalForm {% endblock %}
+
+{% block body %}
+
+<h1>modalForm</h1>
+<!-- {{ modalform }} -->
+<form action= "{% url 'addModalForm' %}" method="post">
+    {% csrf_token %}
+    {{ modalform.as_p }}
+    <input type="submit" class = "btn btn-success" value="Register" />
+</form>
+
+{% endblock %}
